@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vancouver Rehome | Furniture Sales & Professional Repair</title>
+    <title>Vancouver Rehome | Premium Furniture & Expert Repair</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .whatsapp-float {
@@ -13,71 +13,91 @@
             align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             transition: transform 0.3s;
         }
-        .service-card:hover { border-color: #3b82f6; background-color: #eff6ff; }
+        .whatsapp-float:hover { transform: scale(1.05); }
+        .service-card img { transition: transform 0.5s; }
+        .service-card:hover img { transform: scale(1.1); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans min-h-screen">
 
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-blue-800 flex items-center">
-                Vancouver ReHome <span class="ml-2 text-sm font-normal text-gray-400 font-chinese">温居生活服务</span>
-            </h1>
+            <h1 class="text-xl font-bold text-blue-800 tracking-tighter">Vancouver ReHome <span class="text-xs font-normal text-gray-400 ml-1">温居生活服务</span></h1>
+            <a href="tel:17786830488" class="text-blue-600 font-bold text-sm">Call: 778-683-0488</a>
         </div>
     </nav>
 
-    <header class="max-w-6xl mx-auto px-4 py-10 text-center border-b border-gray-100">
-        <h2 class="text-4xl font-black mb-4 text-gray-900 tracking-tight">One-Stop Furniture Solutions</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Premium Used Furniture | Expert Repair Services | Kitchen Refinishing
+    <header class="max-w-6xl mx-auto px-4 py-12 text-center">
+        <h2 class="text-4xl font-black mb-4 tracking-tight text-gray-900">Expert Furniture Restoration</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Professional Repair | Stone & Leather Restoration | Kitchen Refinishing<br>
+            <span class="text-blue-600 font-bold">Serving Greater Vancouver with Master Craftsmanship</span>
         </p>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-            <div class="service-card p-4 bg-white rounded-xl border border-gray-200 transition">
-                <div class="text-2xl mb-1">🛠️</div>
-                <div class="font-bold text-sm text-blue-700">Furniture Repair</div>
-                <div class="text-xs text-gray-500">Stair/Floor/Wood</div>
-            </div>
-            <div class="service-card p-4 bg-white rounded-xl border border-gray-200 transition">
-                <div class="text-2xl mb-1">🪨</div>
-                <div class="font-bold text-sm text-blue-700">Stone Repair</div>
-                <div class="text-xs text-gray-500">Marble/Quartz/Countertop</div>
-            </div>
-            <div class="service-card p-4 bg-white rounded-xl border border-gray-200 transition">
-                <div class="text-2xl mb-1">🛋️</div>
-                <div class="font-bold text-sm text-blue-700">Leather Repair</div>
-                <div class="text-xs text-gray-500">Sofa/Chair Refurbish</div>
-            </div>
-            <div class="service-card p-4 bg-white rounded-xl border border-gray-200 transition">
-                <div class="text-2xl mb-1">🍳</div>
-                <div class="font-bold text-sm text-blue-700">Kitchen Refinish</div>
-                <div class="text-xs text-gray-500">Cabinet Color Change</div>
-            </div>
-        </div>
     </header>
 
-    <div class="max-w-6xl mx-auto px-4 mt-12 mb-6">
-        <h3 class="text-2xl font-bold text-gray-800">Latest Inventory & Projects</h3>
-    </div>
-
-    <div id="filter-bar" class="max-w-6xl mx-auto px-4 mb-8 flex flex-wrap gap-2 text-sm">
+    <section class="max-w-6xl mx-auto px-4 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="service-card bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                <div class="h-40 overflow-hidden bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1581781870027-04212e231e96?auto=format&fit=crop&w=500" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 text-center">
+                    <h4 class="font-bold text-blue-900">Furniture Repair</h4>
+                    <p class="text-[11px] text-gray-500 mt-1 uppercase tracking-wider">Stair, Floor & Wood</p>
+                </div>
+            </div>
+            <div class="service-card bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                <div class="h-40 overflow-hidden bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1628592102751-ba83b035645c?auto=format&fit=crop&w=500" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 text-center">
+                    <h4 class="font-bold text-blue-900">Stone Repair</h4>
+                    <p class="text-[11px] text-gray-500 mt-1 uppercase tracking-wider">Marble & Countertop</p>
+                </div>
+            </div>
+            <div class="service-card bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                <div class="h-40 overflow-hidden bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=500" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 text-center">
+                    <h4 class="font-bold text-blue-900">Leather Repair</h4>
+                    <p class="text-[11px] text-gray-500 mt-1 uppercase tracking-wider">Sofa & Chair Refurbish</p>
+                </div>
+            </div>
+            <div class="service-card bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                <div class="h-40 overflow-hidden bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1556911220-e150240ef63e?auto=format&fit=crop&w=500" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 text-center">
+                    <h4 class="font-bold text-blue-900">Kitchen Refinish</h4>
+                    <p class="text-[11px] text-gray-500 mt-1 uppercase tracking-wider">Cabinet Color Change</p>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <div id="filter-bar" class="max-w-6xl mx-auto px-4 mb-8 flex flex-wrap gap-2 justify-center">
+        <button onclick="filter('All')" class="px-5 py-2 bg-blue-700 text-white rounded-full text-sm font-bold">All Inventory</button>
+    </div>
 
     <main class="max-w-6xl mx-auto px-4 pb-24">
         <div id="gallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div id="loading" class="col-span-full py-20 text-center text-gray-400 italic">Syncing live data from our workshop...</div>
+            <div id="loading" class="col-span-full py-20 text-center text-gray-400 italic">Syncing latest projects...</div>
         </div>
     </main>
 
-    <a href="https://wa.me/17786830488?text=Hi Jason! I am interested in your furniture/repair services." target="_blank" class="whatsapp-float">
+    <a href="https://wa.me/17786830488?text=Hi Jason! I found your website and I am interested in your services/inventory." target="_blank" class="whatsapp-float">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6 h-6 mr-2" alt="WhatsApp">
-        Contact Jason
+        Chat with Jason
     </a>
 
-    <footer class="bg-gray-100 py-10">
+    <footer class="bg-white py-12 border-t border-gray-100">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <p class="text-gray-500 text-sm mb-2">Service Area: Greater Vancouver (Richmond, Burnaby, Surrey, etc.)</p>
-            <p class="text-gray-400 text-xs tracking-widest uppercase font-bold">&copy; 2025 ReHome Services</p>
+            <p class="text-sm font-bold text-gray-800">ReHome温居生活服务 | Precision Restoration</p>
+            <p class="text-xs text-gray-400 mt-4 leading-loose">
+                Applying MANUS Engineering Principles to Furniture Restoration.<br>
+                Service Area: Vancouver, Richmond, Burnaby, Coquitlam, Surrey.
+            </p>
         </div>
     </footer>
 
@@ -85,7 +105,7 @@
         const icloudLink = 'https://www.icloud.com/sharedalbum/#B25G4Tcsm0bvhGG';
         let allItems = [];
 
-        async function loadInventory() {
+        async function init() {
             try {
                 const token = icloudLink.split('#')[1];
                 const res = await fetch(`https://p23-sharedstreams.icloud.com/${token}/sharedstreams/webstream`, {
@@ -96,14 +116,14 @@
                 
                 allItems = data.photos.reverse().map(p => ({
                     src: `https://${data.items[p.itemGuid].url_location}${data.items[p.itemGuid].url_path}`,
-                    tag: p.caption || "Other"
+                    tag: p.caption || "Inventory"
                 }));
 
                 const tags = ['All', ...new Set(allItems.map(i => i.tag))];
                 renderFilters(tags);
                 renderGrid(allItems);
             } catch (err) {
-                document.getElementById('loading').innerHTML = "Gallery sync pending... Make sure the album is public.";
+                document.getElementById('loading').innerHTML = "Gallery sync failed. Check iCloud public settings.";
             }
         }
 
@@ -111,7 +131,7 @@
             const bar = document.getElementById('filter-bar');
             if(tags.length <= 1) return;
             bar.innerHTML = tags.map(tag => `
-                <button onclick="filter('${tag}')" class="px-4 py-2 bg-white border border-gray-300 rounded-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition">
+                <button onclick="filter('${tag}')" class="px-5 py-2 bg-white border border-gray-200 rounded-full text-sm hover:bg-blue-50 transition">
                     ${tag}
                 </button>
             `).join('');
@@ -120,12 +140,12 @@
         function renderGrid(items) {
             const g = document.getElementById('gallery');
             g.innerHTML = items.map(i => `
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 group">
-                    <div class="aspect-square overflow-hidden bg-gray-100">
-                        <img src="${i.src}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
+                    <div class="aspect-square overflow-hidden bg-gray-50">
+                        <img src="${i.src}" class="w-full h-full object-cover">
                     </div>
                     <div class="p-3">
-                        <span class="text-[10px] uppercase tracking-wider font-bold text-blue-500">${i.tag}</span>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase tracking-tighter">${i.tag}</span>
                     </div>
                 </div>
             `).join('');
@@ -135,7 +155,7 @@
             renderGrid(tag === 'All' ? allItems : allItems.filter(i => i.tag === tag));
         }
 
-        loadInventory();
+        init();
     </script>
 </body>
 </html>
